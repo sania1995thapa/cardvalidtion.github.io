@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Card Validation Project</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+     
+    </head>
+     
+     
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">PROJECT</a></li>
+                    <li><a href="">CHECK VALIDITY</a></li>
+                </ul>    
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"> </i>
+        </nav>
+        
+<div class="text-box">
+    <h1>Credit and Debit Card Validation</h1>
+    
+    <p>This is a simple project that uses Luhn’s algorithm to validate a user’s credit card. <br>The program works for all popular cards like Visa, Amex, MasterCard, etc. <br>Luhn’s algorithm checks for basic validations of these ATM Cards. It is a good program to learn <br>because most e-commerce transactions require credit card validation.<br><p><b>This is project under the guidance of Prof. (Dr) Pankaj Vaidya.</b> </p>
+    <p>
+    <b>Team Memeber: </b><br>
+            Kashish Sahni <br>
+            Sania Thapa <br>
+            Shivani Thakur <br>
+            Varun</p>
+</div>
+    </section>
+    
+    
+<!-----About----->
+    <section class="About">
+        
+        <h2>About Cash Cards</h2>
+        <p>A cash card is an electronic payment card that stores cash for various types of payments. Cash cards may include <br> bank debit cards, prepaid debit cards, gift cards, and payroll cards. <br>They do not include credit cards since credit cards are a form of debt rather than cash.</p>
+        <p>Cards can be classified on the basis of their issuance, usage and payment by the card holder. <br>There are three types of cards: Debit Card, Credit Card and Prepaid Card.<br>
+        These cards can be issued by banks or other entities too. We will discuss each type of card and the issuance authority for particular type of card.</p>
+        
+        
+        <div class="row">
+            <div class="About-col">
+            <h3>Debit Cards</h3>
+                <p> Debit Card means the card which can be used to withdraw cash up to the limit present in customer's bank account. They are also known as bank card, plastic card or check card. These are issued by banks only. this card can be used domestically and internationally (provided it is enabled for international use.)</p>
+                <img src="images/world-debit-card_600x338.png">
+            </div>
+            
+            <div class="About-col">
+            <h3>Credit Cards</h3>
+                <p> Unlike debit cards, in case of credit cards, a customer can also withdraw beyond the amount of money present in its bank account. But there is a limit for each credit card up to which extra money can be withdraw and also time limit up to whihc the extra money withdran should be paid back. These are issued by banks or other entitites approved by RBI. These cards can also be used domestiocally and internationally.</p>
+                <img src="images/card-image-standard-credit-card.png">
+            </div>
+            
+            <div class="About-col">
+            <h3>Prepaid Cards</h3>
+                <p> These cards can be issued by banks and non-banks. for issuning this card the customer has to pay the amount in advance whihc is then stored in his prepaid card to be used whenever required. The type of card is never linked to your bank account. Maximum amount to be stored is Rs 1,00,000. These cards can be used only domestically.</p>
+                <img src="images/consumer-prepaid-mastercard-card_1280x720.png">
+            </div>
+        </div>
+    </section>
+    
+<!-------Project------>
+    
+    <section class="Project">
+        <h4>Project</h4>
+        
+        <div class="problem-left">
+        <h5> Problem Statement</h5>
+        <p>Usually we get numerours calls regarding credit cards and debit card creation. From which some of them are the fruads or spam ones which can be threat to your bank account.
+        As they sound like they are talking from bank but they aren't. This thing usually happens with making of credit card, as it can be issued by bank<br> and as well as non-bank authroites. to check those stuff there should be vard number validation.</p>
+        </div>
+            
+        <div class="solution-left">
+        <h6>Solution</h6>
+        <p>To check that whether the card number you have is valid or not we have created a program using C++ and<br> Luhn algorithm, named credit card validation check.<br> In which when you enter our credit or debit card number it will tell you that whethre your card number is valid or not.</p>             
+        </div> 
+    </section>
+    
+    <!-------Validation check Point--->
+    
+    <scetion class="validity">
+        
+        <div class="valid-col">
+        <h7>Validation Check</h7> 
+            <p>It is important to keep in mind that whenever fraudulent cards are used, the merchant loses. The customer of a <br> stolen credit card is not hooked, and the credit card companies are generally not affected.</p>
+        <p> Here you can check the validation of your credit or debit card number.</p>
+            
+        <form action="/url" method="GET">
+            <p> Please enter your credit or debit card number: </p>
+            <input type="number" name="You card number" placeholder="Enter card number" required>
+            <button type="submit">Submit</button>
+        </form>
+                
+            </div>
+    </scetion>
+    
+    <!------Summary---->
+    <section class="Sources">
+        <div class="soruces-col">
+    <h8>Summary</h8>
+        <p>Through this project we got introduced and learnt about Luhn's algorithm <br>that is used in checking the validation of any cash card number. <br>It can help us to prevent getting wrong or duplicate card number <br>(mistakeningly or intentionally from the banks non-banks authorities, respectively).</p>
+        
+    </div>
+    </section>
+    
+<!-----------foooter----------->
+    <section class="footer">
+    <h11> Thank You
+        </h11>    
+    </section>
+<!-------JavaScript for Toggle Menu------>
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.stlye.right="0";
+    }
+    function hideMenu(){
+        navLinks.stlye.right="-200px";
+    }
+    </script>
+</body>
+</html>
